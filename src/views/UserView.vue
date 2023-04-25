@@ -13,6 +13,7 @@
   };
 
   fetchUsers();
+
 </script>
 
 <template>
@@ -28,4 +29,40 @@
 </template>
 
 <style scoped lang="scss">
+@import '../assets/base.css';
+.user-view-container {
+  margin: 100px 9%;
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    button {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 9px 10px;
+      border-radius: 10px;
+      border: none;
+
+      &:focus{
+        outline: none;   
+      }
+    }
+  }
+  .user-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .user-card-container {
+      margin-right: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
 </style>
